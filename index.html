@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới - Mạnh Hùng & Anh Thư</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ 
+
+
+    <!-- Nhạc nền tự động phát (ẩn) -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="nhacdamcuoi.m4a" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+    
+    <!-- Button phát nhạc (ẩn vì tự động phát) -->
+    <button id="playMusicBtn" style="display: none;" onclick="playMusic()">🎵 Phát Nhạc</button>
+    
+    <!-- Thiệp cưới chính -->
+    <div class="wedding-invitation">
+        <!-- Header với ảnh cặp đôi -->
+        <section class="hero-section">
+            <div class="couple-photo">
+                <img src="images/TIN_5343.jpg" alt="Mạnh Hùng & Anh Thư" class="main-photo">
+                <div class="photo-overlay">
+                    <div class="welcome-text">
+                        <h1 class="welcome">Welcome</h1>
+                        <p class="to-celebration">TO THE CELEBRATION OF</p>
+                    </div>
+                </div>
+                <div class="wedding-rings">
+                    <i class="fas fa-ring"></i>
+                </div>
+            </div>
+            
+            <div class="couple-names">
+                <h2 class="groom-name">Mạnh Hùng</h2>
+                <span class="and">&</span>
+                <h2 class="bride-name">Anh Thư</h2>
+            </div>
+            
+            <div class="wedding-title">WEDDING</div>
+            <div class="wedding-date">MONDAY 10-11-2025</div>
+        </section>
+
+        <!-- Thư mời -->
+        <section class="invitation">
+            <div class="invitation-header">
+                <h3>Thư Mời</h3>
+                <p>Tham Dự Lễ Cưới của Hùng & Thư</p>
+            </div>
+            
+            <!-- Ảnh cặp đôi trong thư mời -->
+            <div class="invitation-photo">
+                <img src="images/t/TIN_5099.jpg" alt="Mạnh Hùng & Anh Thư" class="invitation-couple-photo">
+            </div>
+            
+            <div class="invitation-message">
+                <p>Trân trọng kính mời bạn đến dự lễ cưới của chúng tôi</p>
+                <p>Mong được chia sẻ niềm vui hạnh phúc cùng gia đình và bạn bè</p>
+            </div>
+        </section>
+
+        <!-- Thông tin gia đình -->
+        <section class="family-info">
+            <div class="groom-family">
+                <h4>Nhà Trai</h4>
+                <div class="family-details">
+                    <p><strong>Ông:</strong> NGUYỄN HỮU THỦY</p>
+                    <p><strong>Bà:</strong> LÊ THỊ LỆ</p>
+                    <p>SN: 29/91 Đồng Lễ</p>
+                    <p>P. Hạc Thành</p>
+                    <p>Tỉnh Thanh Hóa</p>
+                </div>
+            </div>
+            
+            <div class="bride-family">
+                <h4>Nhà Gái</h4>
+                <div class="family-details">
+                    <p><strong>Ông:</strong> TRẦN HỮU TỈNH</p>
+                    <p><strong>Bà:</strong> PHẠM THỊ HUỆ</p>
+                    <p>Thôn Cư Môn</p>
+                    <p>Xã Thạch Bình</p>
+                    <p>Tỉnh Thanh Hóa</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lễ Nạp Tài -->
+        <section class="wedding-ceremony nap-tai-section">
+            <!-- Hiệu ứng chim bay cho Nạp Tài -->
+            
+            
+            <!-- Hiệu ứng kim cương rơi -->
+            <div class="falling-diamonds">
+                <div class="diamond diamond-1">💎</div>
+                <div class="diamond diamond-2">💎</div>
+                <div class="diamond diamond-3">💎</div>
+                <div class="diamond diamond-4">💎</div>
+            </div>
+            
+            <!-- <div class="ceremony-location">
+                <p class="location">Tại Gia Đình Nhà Trai</p>
+                 <p class="location">Tại Gia Đình Nhà Gái</p>
+            </div> -->
+            
+            <div class="main-ceremony">
+                <h3 class="ceremony-title-special nap-tai-title">Lễ Nạp Tài</h3>
+                 <div class="ceremony-location">
+                <p class="location">Tại Gia Đình Nhà Trai</p>
+                 <!-- <p class="location">Tại Gia Đình Nhà Gái</p> -->
+            </div>
+                <div class="ceremony-time">
+                    <div class="time-info">
+                        <span class="xuat">Xuất Phát Lúc</span> 
+                        <span class="time">7Giờ15'</span>
+                        <!-- <span class="time">8Giờ30'</span> -->
+                        <span class="day">Thứ Bảy</span>
+                    </div>
+                    <div class="date-info">
+                        <span class="day-number">08</span>
+                    </div>
+                    <div class="date-info">
+                        <span class="month">Tháng 11</span>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <p class="lunar-date">( Tức Ngày 19 Tháng 9 Năm Ất Tỵ)</p>
+            </div>
+        </section>
+        
+        <!-- Mời ăn ngày 9/11 -->
+        <section class="wedding-ceremony meal-invitation">
+            <!-- Hiệu ứng chim bay cho mời ăn -->
+        
+            
+            <!-- Hiệu ứng hoa rơi cho mời ăn -->
+            <div class="falling-flowers meal-flowers">
+                <div class="flower flower-6">🌸</div>
+                <div class="flower flower-7">🌺</div>
+                <div class="flower flower-8">🌸</div>
+            </div>
+            
+            <!-- <div class="ceremony-location">
+                <p class="location">Tại Gia Đình Nhà Trai</p>
+            </div> -->
+            
+            <div class="main-ceremony">
+                <h3 class="ceremony-title-special meal-title">Mời Ăn Thân Mật</h3>
+                <div class="ceremony-location">
+                 <p class="location">Tại Gia Đình Nhà Trai</p>
+            </div>
+                <div class="ceremony-time">
+                    <div class="time-info">
+                        <span class="time">17Giờ30'</span>
+                        <span class="day">Chủ Nhật</span>
+                    </div>
+                    <div class="date-info">
+                        <span class="day-number">09</span>
+                    </div>
+                    <div class="date-info">
+                        <span class="month">Tháng 11</span>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <p class="lunar-date">( Tức Ngày 20 Tháng 9 Năm Ất Tỵ)</p>
+                <div class="meal-message">
+                    <p>Trân trọng kính mời bạn đến dự bữa cơm thân mật</p>
+                    <p>Chung vui cùng gia đình chúng tôi</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Lễ Vu Quy -->
+        <section class="wedding-ceremony vu-quy-invitation">
+            <!-- Hiệu ứng chim bay -->
+           
+            
+            <!-- Hiệu ứng hoa rơi -->
+            <div class="falling-flowers">
+                <div class="flower flower-1">🌸</div>
+                <div class="flower flower-2">🌺</div>
+                <div class="flower flower-3">🌸</div>
+                <div class="flower flower-4">🌺</div>
+                <div class="flower flower-5">🌸</div>
+            </div>
+<!--             
+            <div class="ceremony-location">
+                <p class="location">Tại Gia Đình Nhà Trai</p>
+            </div> -->
+            
+            <div class="main-ceremony">
+                <h3 class="ceremony-title-special">Lễ Thành Hôn</h3>
+
+                <div class="ceremony-location">
+                <p class="location">Tại Gia Đình Nhà Trai</p>
+            </div>
+                <div class="ceremony-time">
+                    <div class="time-info">
+                        <span class="time">10Giờ30'</span>
+                        <span class="day">Thứ Hai</span>
+                    </div>
+                    <div class="date-info">
+                        <span class="day-number">10</span>
+                    </div>
+                    <div class="date-info">
+                        <span class="month">Tháng 11</span>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <p class="lunar-date">( Tức Ngày 21 Tháng 9 Năm Ất Tỵ)</p>
+            </div>
+        </section>
+         <!-- Địa điểm tổ chức -->
+        <section class="location-section">
+            <h3>Địa điểm tổ chức</h3>
+            <div class="map-container">
+                <div class="map-info">
+                    <button class="directions-btn">Chỉ đường</button>
+                    <a href="#" class="view-larger">Xem bản đồ lớn hơn</a>
+                </div>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.123456789!2d105.805123456789!3d19.80123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDQ4JzA0LjYiTiAxMDXCsDQ4JzIxLjMiRQ!5e0!3m2!1svi!2s!4v1234567890123!5m2!1svi!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Album ảnh cưới -->
+        <section class="photo-album">
+            <h3>Album ảnh cưới</h3>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="images/TIN_5343.jpg" alt="Ảnh cưới 1">
+                </div>
+                <div class="photo-item">
+                    <img src="images/TIN_5365.jpg" alt="Ảnh cưới 2">
+                </div>
+                <div class="photo-item">
+                    <img src="images/TIN_5392.jpg" alt="Ảnh cưới 3">
+                </div>
+                <div class="photo-item">
+                    <img src="images/TIN_5485.jpg" alt="Ảnh cưới 4">
+                </div>
+                <div class="photo-item">
+                    <img src="images/TIN_5099.jpg" alt="Ảnh cưới 5">
+                </div>
+                <div class="photo-item">
+                    <img src="images/TIN_5591.jpg" alt="Ảnh cưới 6">
+                </div>
+            </div>
+        </section>
+
+ 
+
+        <!-- Lịch tháng 11 -->
+        <section class="calendar-section">
+            <h3>THÁNG 11-2025</h3>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <div class="day-header">T2</div>
+                    <div class="day-header">T3</div>
+                    <div class="day-header">T4</div>
+                    <div class="day-header">T5</div>
+                    <div class="day-header">T6</div>
+                    <div class="day-header">T7</div>
+                    <div class="day-header">CN</div>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    <div class="calendar-day">9</div>
+                    <div class="calendar-day wedding-day">10</div>
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day">12</div>
+                    <div class="calendar-day">13</div>
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day">15</div>
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day">20</div>
+                    <div class="calendar-day">21</div>
+                    <div class="calendar-day">22</div>
+                    <div class="calendar-day">23</div>
+                    <div class="calendar-day">24</div>
+                    <div class="calendar-day">25</div>
+                    <div class="calendar-day">26</div>
+                    <div class="calendar-day">27</div>
+                    <div class="calendar-day">28</div>
+                    <div class="calendar-day">29</div>
+                    <div class="calendar-day">30</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thêm ảnh cưới đẹp -->
+        <section class="additional-photos">
+            <h3>Khoảnh khắc đẹp</h3>
+            <div class="additional-photo-grid">
+                <div class="additional-photo-item">
+                    <img src="images/TIN_5698.jpg" alt="Khoảnh khắc 1">
+                </div>
+                <div class="additional-photo-item">
+                    <img src="images/TIN_5772.jpg" alt="Khoảnh khắc 2">
+                </div>
+                <div class="additional-photo-item">
+                    <img src="images/TIN_5825.jpg" alt="Khoảnh khắc 3">
+                </div>
+                <div class="additional-photo-item">
+                    <img src="TIN_5682.jpg" alt="Khoảnh khắc 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lời cảm ơn -->
+        <section class="thank-you">
+            <div class="thank-you-photo">
+                <img src="images/TIN_5562.jpg" alt="Cảm ơn">
+                <div class="thank-you-overlay">
+                    <h3>Thank you</h3>
+                    <p>Rất Mong Được Đón Tiếp</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons gửi thiệp mừng cưới -->
+        <section class="send-invitation">
+            <div class="invitation-buttons-container">
+                <button class="send-invitation-btn nha-trai-btn" onclick="showNhaTraiModal()">
+                    <i class="fas fa-male"></i>
+                    <span>Thiệp Mừng Nhà Trai</span>
+                </button>
+                <button class="send-invitation-btn nha-gai-btn" onclick="showNhaGaiModal()">
+                    <i class="fas fa-female"></i>
+                    <span>Thiệp Mừng Nhà Gái</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Modal thiệp mừng nhà trai -->
+        <div id="nhaTraiModal" class="invitation-modal">
+            <div class="invitation-modal-content">
+                <span class="close-invitation-modal" onclick="closeNhaTraiModal()">&times;</span>
+                <div class="invitation-card nha-trai-card">
+                    <div class="invitation-header">
+                        <h2>Thiệp Mừng Nhà Trai</h2>
+                        <p>Mạnh Hùng & Anh Thư</p>
+                    </div>
+                    <div class="invitation-body">
+                        <div class="qr-codes">
+                            <div class="qr-code-item">
+                                <h4>QR Code Nhà Trai</h4>
+                                <div class="qr-code">
+                                    <img src="images/traiv2.jpg" alt="QR Code Nhà Trai">
+                                </div>
+                                <p>Thông tin nhà trai</p>
+                            </div>
+                        </div>
+                        <div class="invitation-message">
+                            <h3>Lời chúc mừng</h3>
+                            <p>Chúc hai bạn trăm năm hạnh phúc!</p>
+                            <p>Mong rằng tình yêu của hai bạn sẽ mãi mãi bền vững.</p>
+                        </div>
+                    </div>
+                    <div class="invitation-footer">
+                        <button class="share-btn" onclick="shareNhaTraiInvitation()">
+                            <i class="fas fa-share"></i>
+                            Chia sẻ thiệp
+                        </button>
+                        <button class="download-btn" onclick="downloadNhaTraiInvitation()">
+                            <i class="fas fa-download"></i>
+                            Tải xuống
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal thiệp mừng nhà gái -->
+        <div id="nhaGaiModal" class="invitation-modal">
+            <div class="invitation-modal-content">
+                <span class="close-invitation-modal" onclick="closeNhaGaiModal()">&times;</span>
+                <div class="invitation-card nha-gai-card">
+                    <div class="invitation-header">
+                        <h2>Thiệp Mừng Nhà Gái</h2>
+                        <p>Mạnh Hùng & Anh Thư</p>
+                    </div>
+                    <div class="invitation-body">
+                        <div class="qr-codes">
+                            <div class="qr-code-item">
+                                <h4>QR Code Nhà Gái</h4>
+                                <div class="qr-code">
+                                    <img src="images/gái2.jpg" alt="QR Code Nhà Gái">
+                                </div>
+                                <p>Thông tin nhà gái</p>
+                            </div>
+                        </div>
+                        <div class="invitation-message">
+                            <h3>Lời chúc mừng</h3>
+                            <p>Chúc hai bạn trăm năm hạnh phúc!</p>
+                            <p>Mong rằng tình yêu của hai bạn sẽ mãi mãi bền vững.</p>
+                        </div>
+                    </div>
+                    <div class="invitation-footer">
+                        <button class="share-btn" onclick="shareNhaGaiInvitation()">
+                            <i class="fas fa-share"></i>
+                            Chia sẻ thiệp
+                        </button>
+                        <button class="download-btn" onclick="downloadNhaGaiInvitation()">
+                            <i class="fas fa-download"></i>
+                            Tải xuống
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- Canvas cho hiệu ứng trái tim -->
+    <canvas id="heartCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
