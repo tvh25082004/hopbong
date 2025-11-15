@@ -892,13 +892,13 @@ function closeInvitationModal() {
 function shareInvitation() {
     if (navigator.share) {
         navigator.share({
-            title: 'Thiệp Mừng Cưới - Mạnh Hùng & Anh Thư',
-            text: 'Chúc mừng cưới Mạnh Hùng & Anh Thư!',
+            title: 'Thiệp Mừng Cưới - NGUYỄN HỢP & PHƯƠNG ANH',
+            text: 'Chúc mừng cưới NGUYỄN HỢP & PHƯƠNG ANH!',
             url: window.location.href
         });
     } else {
         // Fallback cho trình duyệt không hỗ trợ Web Share API
-        const shareText = 'Chúc mừng cưới Mạnh Hùng & Anh Thư! Xem thiệp cưới tại: ' + window.location.href;
+        const shareText = 'Chúc mừng cưới NGUYỄN HỢP & PHƯƠNG ANH! Xem thiệp cưới tại: ' + window.location.href;
         navigator.clipboard.writeText(shareText).then(() => {
             alert('Đã copy link chia sẻ vào clipboard!');
         });
@@ -929,7 +929,7 @@ function downloadInvitation() {
     // Vẽ tên cặp đôi
     ctx.fillStyle = '#333';
     ctx.font = 'bold 36px serif';
-    ctx.fillText('Mạnh Hùng & Anh Thư', canvas.width / 2, 180);
+    ctx.fillText('NGUYỄN HỢP & PHƯƠNG ANH', canvas.width / 2, 180);
     
     // Vẽ QR codes (placeholder)
     ctx.fillStyle = '#f0f0f0';
@@ -1023,12 +1023,12 @@ function closeNhaGaiModal() {
 function shareNhaTraiInvitation() {
     if (navigator.share) {
         navigator.share({
-            title: 'Thiệp Mừng Nhà Trai - Mạnh Hùng & Anh Thư',
-            text: 'Chúc mừng cưới Mạnh Hùng & Anh Thư!',
+            title: 'Thiệp Mừng Nhà Trai - NGUYỄN HỢP & PHƯƠNG ANH',
+            text: 'Chúc mừng cưới NGUYỄN HỢP & PHƯƠNG ANH!',
             url: window.location.href
         });
     } else {
-        const shareText = 'Chúc mừng cưới Mạnh Hùng & Anh Thư! Xem thiệp cưới nhà trai tại: ' + window.location.href;
+        const shareText = 'Chúc mừng cưới NGUYỄN HỢP & PHƯƠNG ANH! Xem thiệp cưới nhà trai tại: ' + window.location.href;
         navigator.clipboard.writeText(shareText).then(() => {
             alert('Đã copy link chia sẻ vào clipboard!');
         });
@@ -1055,7 +1055,7 @@ function downloadNhaTraiInvitation() {
     // Vẽ tên cặp đôi
     ctx.fillStyle = '#333';
     ctx.font = 'bold 32px Arial';
-    ctx.fillText('Mạnh Hùng & Anh Thư', canvas.width / 2, 150);
+    ctx.fillText('NGUYỄN HỢP & PHƯƠNG ANH', canvas.width / 2, 150);
     
     // Vẽ QR code placeholder
     ctx.fillStyle = '#ddd';
@@ -1081,12 +1081,12 @@ function downloadNhaTraiInvitation() {
 function shareNhaGaiInvitation() {
     if (navigator.share) {
         navigator.share({
-            title: 'Thiệp Mừng Nhà Gái - Mạnh Hùng & Anh Thư',
-            text: 'Chúc mừng cưới Mạnh Hùng & Anh Thư!',
+            title: 'Thiệp Mừng Nhà Gái - NGUYỄN HỢP & PHƯƠNG ANH',
+            text: 'Chúc mừng cưới NGUYỄN HỢP & PHƯƠNG ANH!',
             url: window.location.href
         });
     } else {
-        const shareText = 'Chúc mừng cưới Mạnh Hùng & Anh Thư! Xem thiệp cưới nhà gái tại: ' + window.location.href;
+        const shareText = 'Chúc mừng cưới NGUYỄN HỢP & PHƯƠNG ANH! Xem thiệp cưới nhà gái tại: ' + window.location.href;
         navigator.clipboard.writeText(shareText).then(() => {
             alert('Đã copy link chia sẻ vào clipboard!');
         });
@@ -1113,7 +1113,7 @@ function downloadNhaGaiInvitation() {
     // Vẽ tên cặp đôi
     ctx.fillStyle = '#333';
     ctx.font = 'bold 32px Arial';
-    ctx.fillText('Mạnh Hùng & Anh Thư', canvas.width / 2, 150);
+    ctx.fillText('NGUYỄN HỢP & PHƯƠNG ANH', canvas.width / 2, 150);
     
     // Vẽ QR code placeholder
     ctx.fillStyle = '#ddd';
